@@ -6,7 +6,7 @@ class Util:
     def exportCSV(fermate: Fermata, file_name: str) -> None:
         with open(file_name, 'w') as file:
             for fermata in fermate:
-                row = fermata.name + ';'
+                row = fermata.name + ','
                 for passaggio in fermata.passaggi:
-                    row += passaggio + ';'
+                    row += passaggio + ','
                 file.write(row + '\n')

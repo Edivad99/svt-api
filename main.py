@@ -2,18 +2,19 @@ from datetime import date, datetime
 from api import API
 from managers.linea_manager import LineaManager
 from models.direzione import Direzione
+from util import Util
 
 
 # with open('response.html', 'r') as file:
 #     html_doc = file.read()
 
-# fermate = API.get_corse(1, date(2021,1,7), Direzione.ANDATA)
+fermate = API.get_corse(6, date(2021,1,7), Direzione.ANDATA)
 # print(fermate[1])
 # corsa = LineaManager.get_corsa(fermate, 7)
 # print(corsa)
 
-res = API.get_linee()
-res.sort(key=lambda x: x['Codice'])
-print(res)
+# res = API.get_linee()
+# res.sort(key=lambda x: x['Codice'])
+# print(res)
 
-#Util.exportCSV(fermate, 'linea 6.csv')
+Util.exportCSV(fermate[0], 'linea 6.csv')
