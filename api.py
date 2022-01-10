@@ -47,4 +47,5 @@ class API:
                         'Descrizione': item['Descrizione'],
                         #'DescrizioneAzienda': item['DescrizioneAzienda']
                     })
+        result.sort(key=lambda x: x['Codice'])
         return result
