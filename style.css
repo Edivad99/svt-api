@@ -1,0 +1,141 @@
+
+body{ font-family: arial;width: 100%;height: 500px; margin: auto;}
+.topHeader { background: url("../images/ttable_topLabel_fill.jpg") repeat-x; height: 34px;color: white;font-size: 14px;min-width: 800px; }
+.topHeader .title { background: url("../MYCICEROOLBIA/images/ttable_topLabel_cerca.jpg") no-repeat;display: block;height: 34px;width: 132px; display: inline-block;}
+.topHeader .elenco { background: url("../MYCICEROOLBIA/images/ttable_topLabel_clenco.jpg") no-repeat;display: block;height: 34px;width: 153px; display: inline-block;  }
+.topHeaderSeparator { background: url("../images/ttable_shadow_darkToLight.jpg") repeat-x;height: 10px;}
+
+.headerDesc { background-color: #ccc; font-size: 12px; color: #B80000; padding:15px;padding-left: 140px; }
+
+.searchForm { background-color: #F5F5F5;padding:10px;}
+.searchFormSeparator {background: url("../images/ttable_shadow_lightToWhite.jpg") repeat-x;height: 10px;}
+.searchFormArrow {background: url("../images/ttable_downArrow.jpg") no-repeat ;width: 64px; height: 32px;float: right;margin-right: 100px;}
+
+.gridLegend { font-size:14px;color: #003366;padding: 4px;}
+
+#orariPage { clear: both;}
+.orariTopSection { background-color:#F5F5F5; color: #333; }
+
+
+table.tableFermateOrari {color: #003366; }
+table.tableFermateOrari  td { border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px;}
+td.colFermata { background-color: #F4F4F4;text-transform: uppercase; /*position:fixed;width: 180px;*/}
+td.colPari { background-color: #F4F4F4;}
+td.colDispari { background-color: #FFFFFF;}
+
+legend { font-size: 14px;color: #666666;}
+.floatLeft { float: left; }
+.solutionDetailIcon { margin-top: 0;vertical-align: middle; }
+.boxLineaSmall { background-color: #FF6600;height: 25px;color: white;line-height: 25px;min-width: 25px; text-align: center; }
+.boxLineaLarge { background-color: #FF6600;height: 38px;color: white;line-height: 38px;min-width: 38px; text-align: center;}
+.boxPeriodoStampa { /*float: left;*/  }
+
+.ui-jqgrid { border: none;}
+.ui-jqgrid .ui-jqgrid-view {background-color: #fff; }
+.ui-widget-content { background: white;color: #333;  }
+.ui-jqgrid tr.jqgrow { background: #ccc;color: #333333;}
+.altGridRow { background-color:#fff !important;color: #333333;  }
+.ui-jqgrid tr.ui-row-ltr td { border: none;height: 32px; padding: 0 2px 0 2px; }
+
+.mobiBtnLeft { background: transparent url("../images/btn_generic_leftCap_off.png") no-repeat;  float: left;height: 34px;width: 6px; margin-top:3px;margin-left: 5px;}
+.mobiBtnLeft.over, .mobiBtnLeft.active  { background-image: url("../images/btn_generic_leftCap_on.png"); }
+.mobiBtnRight { background: transparent url("../images/btn_generic_rightCap_off.png") no-repeat;  float: left;height: 34px;width: 6px; margin-top:3px;margin-right: 5px; }
+.mobiBtnRight.over, .mobiBtnRight.active { background-image: url("../images/btn_generic_rightCap_on.png"); }
+.mobiBtnCenter { line-height: 34px; text-align: center;   background: transparent url("../images/btn_generic_fill_off.png") repeat-x;     font-size: 13px; color: #B80000; font-weight: bold; cursor: pointer; float: left; margin-top:3px; padding:0 10px; }
+.mobiBtnCenter:hover , .mobiBtnCenter.active { background-image: url("../images/btn_generic_fill_on.png"); color: white;}
+
+.mobiBtnLeftExt { background: transparent url("../images/btn_generic_leftCap_off.png") no-repeat;  float: left;height: 34px;width: 6px; margin-top:3px;margin-left: 5px;}
+.mobiBtnLeftExt.over, .mobiBtnLeftExt.active  { background-image: url("../images/btn_generic_leftCap_on.png"); }
+.mobiBtnRightExt { background: transparent url("../images/btn_generic_rightCap_off.png") no-repeat;  float: right;height: 34px;width: 6px; margin-top:3px;margin-right: 5px; }
+.mobiBtnRightExt.over, .mobiBtnRightExt.active { background-image: url("../images/btn_generic_rightCap_on.png"); }
+.mobiBtnCenterExt { line-height: 34px; background: transparent url("../images/btn_generic_fill_off.png") repeat-x; font-size: 13px; color: #B80000; font-weight: bold; cursor: pointer; margin-top:3px; padding:0 10px; text-align: right;}
+.mobiBtnCenterExt:hover , .mobiBtnCenterExt.active { background-image: url("../images/btn_generic_fill_on.png"); color: white;}
+
+.mobiBtnLeft_small { background: transparent url("../MYCICEROOLBIA/images/btn_genericSmall_leftCap_off.png") no-repeat;  float: left;height: 28px;width: 6px; margin-top:3px;margin-left: 5px;}
+.mobiBtnLeft_small.over, .mobiBtnLeft_small.active  { background-image: url("../MYCICEROOLBIA/images/btn_genericSmall_leftCap_on.png"); }
+.mobiBtnRight_small { background: transparent url("../MYCICEROOLBIA/images/btn_genericSmall_rightCap_off.png") no-repeat;  float: left;height: 28px;width: 6px; margin-top:3px;margin-right: 5px; }
+.mobiBtnRight_small.over, .mobiBtnRight_small.active { background-image: url("../MYCICEROOLBIA/images/btn_genericSmall_rightCap_on.png"); }
+.mobiBtnCenter_small { line-height: 28px; text-align: center;   background: transparent url("../MYCICEROOLBIA/images/btn_genericSmall_fill_off.png") repeat-x;     font-size: 13px; color: #CC0000; font-weight: bold; cursor: pointer; float: left; margin-top:3px; padding:0 10px; }
+.mobiBtnCenter_small:hover , .mobiBtnCenter_small.active { background-image: url("../MYCICEROOLBIA/images/btn_genericSmall_fill_on.png"); color: white;}
+
+
+.waitingDivMsg { float:left; vertical-align: middle; line-height:32px; padding:2px 12px; font-weight: bold;color: black; }
+
+
+#col1Container {position:absolute;height:750px;overflow:hidden; }
+
+.table-container {
+    /*width:810px; /* Total width of visible columns + border widths */
+    width:100%;
+    height:750px;
+    /*margin-left: 10px;*/
+    overflow:hidden;
+}
+
+.sliding-window {
+    width:810px; /* Total width of all columns in sliding-window + border widths */
+    height:750px;
+    overflow-y: auto;
+}
+
+.sliding-window div {
+    float:left;
+    /*width:150px;*/
+    height:705px;
+}
+
+#col1 {
+    background-color:white;
+    z-index:5;
+}
+
+/*#gridWrapper {padding:10px;}*/
+
+
+
+ 
+table { page-break-inside:auto }
+tr  { page-break-inside:avoid; page-break-after:auto }
+ 
+ .ui-jqgrid-bdiv { overflow-x: hidden !important;}
+ 
+ 
+ #gridContainer { width:960px;min-width: 960px;}
+ 
+ .lineaTpl { display: block;clear: both;}
+ 
+ .codiceLinea.left { background-image: url('../images/timetable_lineBadge_red_leftCap.jpg');width: 10px; height: 73px;display: inline-block;float: left;}
+ .codiceLinea.fill { background-image: url('../images/timetable_lineBadge_red_fill.jpg'); height: 73px; background-repeat: repeat-x; display: inline-block;color: white;font-size: 18px;float: left; padding: 5px;text-align: right;width: 80px;}
+ .codiceLinea.right{ background-image: url('../images/timetable_lineBadge_red_rightCap.jpg');width: 10px;height: 73px; display: inline-block; float: left;}
+ .descContainer { padding: 2px;float: left;}
+ .descLinea { float:left;font-size: 12px;color: #333;padding: 3px;}
+ .direzToLeft{background-image:url('../images/timetable_dir_toLeft.jpg');width: 51px;height: 45px;display: inline-block;}
+ .direzToRight{background-image:url('../images/timetable_dir_toRight.jpg');width: 51px;height: 45px;display: inline-block;}
+ .direzCircular{background-image:url('../images/timetable_dir_circular.jpg');width: 51px;height: 45px;display: inline-block;}
+ .direzSeparator { background-image: url('../images/timetable_dirDivider_notCircular.jpg');width: 22px;height: 45px;display:inline; background-color: white; }
+ .direzSeparator.SoloR { margin-left: 51px;}
+ .direzSeparator.circolare{ background-image: url('../images/timetable_dirDivider_Circular.jpg');background-color: white;margin-left: 51px; }
+ .direzLinea { background-color:#F5F5F5;float: left;clear: left;width: 820px;height: 46px; vertical-align: middle;cursor: pointer;}
+ .direzLinea.ext { float: right !important;}
+ .partLinea { float: left;display: inline-block;font-size: 12px;text-decoration: underline;color: #333;width: 300px;text-align: right; font-weight: bold; cursor: pointer;}
+ /*.partLinea p { line-height: 46px;}*/
+ .padLeftLineaCircolare{ float: left;display: block;width: 300px;height: 50px;}
+ .arrivoLinea { float: left;display: inline-block;font-size: 12px;text-decoration: underline;color: #333; font-weight: bold;}
+ 
+  #datePickerDataExt {
+    /*float: left;*/
+    font-size: 12px;
+    margin: 0;
+    width: 116px;   
+    padding: 5px;
+    margin-right: 5px;
+    vertical-align: inherit;
+}
+
+.colorDarkGray {
+    color: #999999!important;
+}
+
+.tableCell {
+    display: table-cell!important;
+}
