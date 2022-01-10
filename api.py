@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from models.direzione import Direzione
 from models.fermata import Fermata
 from htmlparser import HtmlParser
+from positiondb import PositionDB
 
 class API:
     URL_BASE: str = 'http://www.mobilitaveneto.net/TP/SVT/StampaOrari'
@@ -55,15 +56,30 @@ class API:
         return result
 
     @staticmethod
-    def get_coordinate_from_address(address: str) -> Tuple[float, float]:
+    def get_coordinate_from_address(address: str) -> Tuple[bool, float, float]:
+        positions = PositionDB()
+        positions.create_table()
+        lat, lon = positions.get_location(address)
+        if lat is not None and lon is not None:
+            print(f"{address}, recuperato dalla cache")
+            positions.close()
+            return True, lat, lon
+
         load_dotenv()
         api_token = os.getenv('api-positionstack')
         data = {
             'access_key': api_token,
             'query': address,
-            'output': 'json'
+            'output': 'json',
+            'region': 'Veneto'
         }
 
         response = requests.get(API.URL_BASE_POSITION, params=data)
-        data = response.json()['data'][0]
-        return data['latitude'], data['longitude']
+        data = response.json()['data']
+        if len(data) > 0:
+            data = data[0]
+            lat, lon = data['latitude'], data['longitude']
+            positions.insert_location(address, lat, lon)
+            positions.close()
+            return True, lat, lon
+        return False, None, None
