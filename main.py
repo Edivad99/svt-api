@@ -8,10 +8,10 @@ from util import Util
 # with open('response.html', 'r') as file:
 #     html_doc = file.read()
 
-fermate, max = API.get_corse(6, date(2021,1,7), Direzione.ANDATA)
-print(max)
-corsa = LineaManager.get_corsa(fermate, max-1)
-print(corsa)
+# fermate, max = API.get_corse(6, date(2021,1,7), Direzione.ANDATA)
+# print(max)
+# corsa = LineaManager.get_corsa(fermate, max-1)
+# print(corsa)
 
 # res = API.get_linee()
 # res.sort(key=lambda x: x['Codice'])
