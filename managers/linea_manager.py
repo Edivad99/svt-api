@@ -11,14 +11,14 @@ class LineaManager:
         for fermata in fermate:
             orario = fermata.passaggi[indice]
             if len(orario) > 0:
-                status, lat, lon = API.get_coordinate_from_address(fermata.name)
+                # status, lat, lon = API.get_coordinate_from_address(fermata.name)
                 corsa.append({
                     'fermata': fermata.name,
                     'orario': orario,
-                    'pos': {
-                        'lat': lat if status else 0,
-                        'lon': lon if status else 0
-                    }
+                    # 'pos': {
+                    #     'lat': lat if status else 0,
+                    #     'lon': lon if status else 0
+                    # }
                 })
         return corsa
 
